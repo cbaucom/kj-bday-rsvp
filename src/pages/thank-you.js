@@ -8,7 +8,7 @@ import SEO from "../components/seo/seo.component"
 import CustomLink from "../components/link/link.component"
 
 const Container = styled.div`
-  background: #fffafe;
+  background: rgba(255, 250, 254, 0.6);
   color: #9438fc;
   margin: 0 auto;
   padding: 2rem;

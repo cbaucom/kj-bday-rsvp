@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Card = styled.article`
-  background: #FFFAFE;
+  background: rgba(255,250,254,0.7);
   padding: 2rem;
   margin: 1rem auto;
   width: 60%;
