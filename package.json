@@ -1,0 +1,51 @@
+{
+  "name": "katiejo-turns-1",
+  "private": true,
+  "description": "KatieJo is turning 1. Come celebrate!",
+  "version": "0.1.0",
+  "author": "Chris Baucom <chris@builtbybaucom.com>",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "confetti-js": "^0.0.15",
+    "gatsby": "^2.15.18",
+    "gatsby-image": "^2.2.19",
+    "gatsby-plugin-google-analytics": "^2.1.16",
+    "gatsby-plugin-manifest": "^2.2.17",
+    "gatsby-plugin-netlify": "^2.1.14",
+    "gatsby-plugin-offline": "^3.0.7",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sharp": "^2.2.24",
+    "gatsby-plugin-styled-components": "^3.1.5",
+    "gatsby-source-filesystem": "^2.1.24",
+    "gatsby-transformer-sharp": "^2.2.15",
+    "google-maps-react": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2",
+    "typeface-montserrat": "^0.0.75"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cbaucom/katiejo-birthday-one"
+  },
+  "bugs": {
+    "url": "https://github.com/cbaucom/katiejo-birthday-one/issues"
+  }
+}
