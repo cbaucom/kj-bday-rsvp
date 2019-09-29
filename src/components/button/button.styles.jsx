@@ -59,7 +59,7 @@ const buttonStyles = css`
   background-color: #ff80f0;
 
   &:hover {
-    background-color: #c18aff;
+    background-color: RGBA(166, 208, 195, 0.90);
     border: 1px solid #ff80f0;
   }
 `

@@ -4,9 +4,11 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "typeface-montserrat"
 import "./layout.css"
+import Image from '../image'
 
 import {
   LayoutContainer,
+  ImageContainer,
   MainContainer,
   FooterContainer,
 } from "./layout.styles"
@@ -31,6 +33,10 @@ const Layout = ({ children }) => (
           <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
         </Helmet>
         <LayoutContainer>
+          <ImageContainer>
+            <Image />
+          </ImageContainer>
+
           <MainContainer>{children}</MainContainer>
           <FooterContainer>
             <a href="https://builtbybaucom.com">Built by Baucom</a>

@@ -2,22 +2,29 @@ import React, { useEffect } from "react"
 import ConfettiGenerator from "confetti-js"
 import styled from "styled-components"
 import balloons from "../images/balloons.png"
+import confetti from "../images/confetti-banner.png"
+import blueLlama from "../images/blue-llama.svg"
+import greenLlama from "../images/green-llama.svg"
+import redParty from "../images/party-red.svg"
 
 import Layout from "../components/layout/layout.component"
 import SEO from "../components/seo/seo.component"
 import CustomLink from "../components/link/link.component"
 
 const Container = styled.div`
-  background: rgba(255, 250, 254, 0.6);
+  background-color: rgba(255, 250, 254, 0.75);
+  background-image: url(${confetti});
+  background-repeat: repeat-x;
+  background-size: 30rem;
   color: #9438fc;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem 0;
   width: 100%;
   display: flex;
   position: relative;
   box-sizing: border-box;
   white-space: nowrap;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -31,9 +38,22 @@ const Container = styled.div`
   }
 
   .text-wrapper {
+    margin: 5rem 1rem 3rem;
     height: 100%;
     box-sizing: border-box;
     white-space: pre-wrap;
+    font-family: "NikolasPine";
+
+    h1 {
+      font-size: 5rem;
+      @media (max-width: 600px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
   }
   .text-wrapper > * {
     z-index: 9;
@@ -50,11 +70,25 @@ const Container = styled.div`
     height: 100%;
     width: 100%;
   }
+
+  @media (max-width: 1024px) {
+    border-radius: 0px;
+  }
 `
 
 export default props => {
   useEffect(() => {
-    const confettiSettings = { target: "confetti-canvas" }
+    const confettiSettings = {
+      target: "confetti-canvas",
+      clock: 20,
+      size: 5,
+      max: 25,
+      props: [
+        { type: "svg", src: `${blueLlama}` },
+        { type: "svg", src: `${greenLlama}` },
+        { type: "svg", src: `${redParty}` },
+      ],
+    }
     const confetti = new ConfettiGenerator(confettiSettings)
     confetti.render()
 

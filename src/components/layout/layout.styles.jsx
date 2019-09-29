@@ -10,33 +10,42 @@ export const LayoutContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  background: linear-gradient(
-      rgba(255,120,192,0.5),
-      rgba(193, 138, 255, 0.5)
-    ),
+  background: RGBA(166, 208, 195, 1.00)
     url(${bg}) center;
+
   color: #FFFAFE;
   `
 
+export const ImageContainer = styled.div`
+  width: 100%;
+  max-width: 1024px;
+
+  .gatsby-image-wrapper {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+  }
+`
+
 export const MainContainer = styled.main`
-  width: 90vw;
-  max-width: 960px;
-  color: #032448;
-  margin: 2rem auto;
+  width: 100%;
+  max-width: 1024px;
+  color: #fff;
+  background: #A6D0C3;
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  align-items: center;
-  padding: 1rem 0;
+  align-items: flex-start;
 
   @media screen and (max-width: 767px) {
-    margin: 0 auto 2rem;
+    margin: 0 auto 4rem;
   }
 `
 
 export const FooterContainer = styled.footer`
   padding: 0.5rem;
-  margin: 0 auto;
+  margin: 4rem auto 0;
   display: flex;
   justify-content: center;
   background-color: rgba(193, 138, 255, 0.75);

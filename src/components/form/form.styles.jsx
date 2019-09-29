@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const Card = styled.article`
-  background: rgba(255,250,254,0.7);
+  background: rgba(255,255,255,0.95);
+  color: rgba(193, 138, 255, 1);
   padding: 2rem;
   margin: 1rem auto;
   width: 60%;
@@ -43,7 +44,7 @@ export const FormWrapper = styled.div`
   label {
     margin-bottom: 1rem;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   input,
   textarea,
@@ -70,7 +71,7 @@ export const FormWrapper = styled.div`
     align-items: baseline;
     margin: 0.5rem 0;
     @media (min-width: 767px) {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
 `
