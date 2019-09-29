@@ -26,11 +26,19 @@ export const CheersContainer = styled.div`
     font-size: 3rem;
     font-style: normal;
     font-weight: 100;
+
+    @media (max-width: 600px) {
+      font-size: 2.5rem;
+    }
   }
 
   .text h3 {
     font-size: 2.5rem;
     font-weight: 400;
+
+    @media (max-width: 600px) {
+      font-size: 2.25rem;
+    }
   }
 
   .party {
