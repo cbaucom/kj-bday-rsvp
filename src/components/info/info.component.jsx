@@ -32,7 +32,7 @@ const Info = () => (
           <p>Melrose, MA</p>
         </div>
         <div className="note">
-          <p>Katie Jo is already so lucky to have such wonderful family friends,</p><p>that you are all the gift she needs.</p>
+          <p>Katie Jo is already so lucky to have such wonderful family and friends,</p><p>that you are all the gift she needs.</p>
         </div>
       </TextContainer>
     </DetailsContainer>
