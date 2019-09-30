@@ -12,7 +12,8 @@ import { VideoContainer } from "./video.styles"
 const Video = () => (
   <VideoContainer>
     <Player
-      playsInline
+			playsInline
+			poster="https://builtbybaucom.com/assets/kj-bday-movie-poster.png"
       src="https://builtbybaucom.com/assets/kj-1year-movie.mov"
     >
       <BigPlayButton position="center" />
