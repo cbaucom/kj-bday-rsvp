@@ -8,6 +8,7 @@ import {
   DetailsContainer,
   TextContainer,
 } from "./info.styles"
+import Video from "../video/video.component"
 
 const Info = () => (
   <InfoContainer>
@@ -26,15 +27,19 @@ const Info = () => (
           <p>11 am - 1 pm</p>
         </div>
         <div className="where">
-          <p>Hosted by the Baucoms</p>
+          <p>The Baucom Residence</p>
           <p>35 N Mountain Ave</p>
           <p>Melrose, MA</p>
+        </div>
+        <div className="note">
+          <p>Katie Jo is already so lucky to have such wonderful family friends,</p><p>that you are all the gift she needs.</p>
         </div>
       </TextContainer>
     </DetailsContainer>
     <CustomLink to="/rsvp" inverted="true">
       RSVP
     </CustomLink>
+    <Video />
   </InfoContainer>
 )
 

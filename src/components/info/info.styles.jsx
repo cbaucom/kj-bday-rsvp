@@ -49,19 +49,12 @@ export const CheersContainer = styled.div`
   }
 `
 
-export const ImageContainer = styled.div`
-  margin-bottom: 1rem;
-  background-size: contain;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-`
-
 export const DetailsContainer = styled.div`
-  margin: 2rem 0;
+  margin: 3rem 0;
   width: 100%;
 
-  @media screen and (max-width: 767px) {
-    margin: 1rem 0;
+  @media screen and (max-width: 600px) {
+    margin: 2rem 0;
   }
 `
 
@@ -72,8 +65,16 @@ export const TextContainer = styled.div`
   padding: 3rem 1rem;
   font-size: 1.5rem;
 
-  .when {
+  .when, .where {
     padding-bottom: 1rem;
+  }
+
+  .note {
+    font-size: 1rem;
+
+    p {
+      margin: 0 auto;
+    }
   }
 
   h3 {
