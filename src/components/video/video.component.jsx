@@ -5,6 +5,8 @@ import {
   ControlBar,
 } from "video-react"
 
+import '../../assets/video-react.css'
+
 import { VideoContainer } from "./video.styles"
 
 const Video = () => (
